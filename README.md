@@ -51,7 +51,7 @@ sudo login someuser
   mkdir testgit
   cd testgit
   mkdir rnd
-  for i in `seq 1 20`; do dd if=/dev/urandom of=rnd/$i.rnd bs=1M count=10; done
+  for i in $(seq 1 20); do dd if=/dev/urandom of=rnd/$i.rnd bs=1M count=10; done
   git init
   git add .
   git commit -m 'Initial commit'
